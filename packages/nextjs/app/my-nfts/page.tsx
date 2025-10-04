@@ -6,6 +6,8 @@ import { useAccount } from "wagmi";
 import { Address } from "~~/components/scaffold-eth";
 import { useScaffoldReadContract } from "~~/hooks/scaffold-eth";
 
+/* eslint-disable @next/next/no-img-element */
+
 const MyNFTs: NextPage = () => {
   const { address: connectedAddress } = useAccount();
   const [mounted, setMounted] = useState(false);
