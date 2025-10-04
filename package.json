@@ -1,0 +1,63 @@
+{
+  "name": "time-based-nft",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "account": "yarn hardhat:account",
+    "account:generate": "yarn workspace @time-based-nft/hardhat account:generate",
+    "account:import": "yarn workspace @time-based-nft/hardhat account:import",
+    "account:reveal-pk": "yarn workspace @time-based-nft/hardhat account:reveal-pk",
+    "chain": "yarn hardhat:chain",
+    "compile": "yarn hardhat:compile",
+    "deploy": "yarn hardhat:deploy",
+    "fork": "yarn hardhat:fork",
+    "format": "yarn next:format && yarn hardhat:format",
+    "generate": "yarn account:generate",
+    "hardhat:account": "yarn workspace @time-based-nft/hardhat account",
+    "hardhat:chain": "yarn workspace @time-based-nft/hardhat chain",
+    "hardhat:check-types": "yarn workspace @time-based-nft/hardhat check-types",
+    "hardhat:clean": "yarn workspace @time-based-nft/hardhat clean",
+    "hardhat:compile": "yarn workspace @time-based-nft/hardhat compile",
+    "hardhat:deploy": "yarn workspace @time-based-nft/hardhat deploy",
+    "hardhat:flatten": "yarn workspace @time-based-nft/hardhat flatten",
+    "hardhat:fork": "yarn workspace @time-based-nft/hardhat fork",
+    "hardhat:format": "yarn workspace @time-based-nft/hardhat format",
+    "hardhat:generate": "yarn workspace @time-based-nft/hardhat generate",
+    "hardhat:hardhat-verify": "yarn workspace @time-based-nft/hardhat hardhat-verify",
+    "hardhat:lint": "yarn workspace @time-based-nft/hardhat lint",
+    "hardhat:lint-staged": "yarn workspace @time-based-nft/hardhat lint-staged",
+    "hardhat:test": "yarn workspace @time-based-nft/hardhat test",
+    "hardhat:verify": "yarn workspace @time-based-nft/hardhat verify",
+    "postinstall": "husky install",
+    "ipfs": "yarn workspace @time-based-nft/nextjs ipfs",
+    "lint": "yarn next:lint && yarn hardhat:lint",
+    "next:build": "yarn workspace @time-based-nft/nextjs build",
+    "next:check-types": "yarn workspace @time-based-nft/nextjs check-types",
+    "next:format": "yarn workspace @time-based-nft/nextjs format",
+    "next:lint": "yarn workspace @time-based-nft/nextjs lint",
+    "next:serve": "yarn workspace @time-based-nft/nextjs serve",
+    "precommit": "lint-staged",
+    "start": "yarn workspace @time-based-nft/nextjs dev",
+    "test": "yarn hardhat:test",
+    "vercel": "yarn workspace @time-based-nft/nextjs vercel",
+    "vercel:login": "yarn workspace @time-based-nft/nextjs vercel:login",
+    "vercel:yolo": "yarn workspace @time-based-nft/nextjs vercel:yolo",
+    "verify": "yarn hardhat:verify"
+  },
+  "devDependencies": {
+    "husky": "~9.1.6",
+    "lint-staged": "~13.2.2"
+  },
+  "packageManager": "yarn@3.2.3",
+  "engines": {
+    "node": ">=20.18.3"
+  },
+  "dependencies": {
+    "vercel": "latest"
+  }
+}
